@@ -1,0 +1,106 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: blanchedalmond;
+   color: blue;
+   height: 100%;
+   width: 100%;
+}
+
+h1{
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 60px;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: underline rgb(248, 40, 40);
+   margin: 15px;
+   padding: 10px;
+}
+
+form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1em;
+}
+
+form #firstName{
+   font-size: 20px;
+   padding: 10px;
+   font-stretch: ultra-expanded;
+   /* font-variant: small-caps; */
+   text-transform:capitalize;
+   border-radius: 15px;
+
+}
+
+form #lastName{
+   font-size: 20px;
+   padding: 10px;
+   font-stretch: ultra-expanded;
+   /* font-variant: small-caps; */
+   text-transform:capitalize;
+   border-radius: 15px;
+
+}
+
+form #score{
+   font-size: 20px;
+   padding: 10px;
+   font-stretch: ultra-expanded;
+   font-variant: small-caps;
+   /* text-transform:capitalize; */
+   border-radius: 15px;
+
+}
+
+form #country{
+   font-size: 20px;
+   padding: 10px;
+   font-stretch: ultra-expanded;
+   /* font-variant: small-caps; */
+   text-transform:capitalize;
+   border-radius: 15px;
+
+}
+
+button{
+   font-size: 20px;
+   margin-left: 25px;
+   padding: 15px;
+   font-stretch: ultra-expanded;
+   border: 2px solid red;
+   border-radius: 50px;
+   box-shadow: 0 3px 5px 2px black;
+   cursor: pointer;    
+}
+
+.output{
+   height: 50em;
+   width: 80em;
+   border: 2px solid red;
+   text-align: center;
+   margin: 30px 100px;
+   padding: 15px;
+}
+
+#list{
+   list-style:none;
+   font-size: 40px;
+   text-align: center;
+}
+
+#list li{
+   color: blue;
+   padding: 10px;
+}
+
+#list li span{
+   margin-right: 50px;
+}

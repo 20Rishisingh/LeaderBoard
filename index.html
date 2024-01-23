@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Leader Board</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <h1>Leader Board</h1>
+   
+   <form onsubmit = "Submit(event)">
+      <label for="firstName"> </label>
+      <input type="text" id="firstName" placeholder="First Name" required>
+      
+      <label for="lastName"> </label>
+      <input type="text" id="lastName" placeholder="Last Name">
+      
+      <label for="score"> </label>
+      <input type="number" id="score" min="0" max="1000" required placeholder="Score">
+   
+      <label for="country"> </label>
+      <input type="text" id="country" placeholder="Country">
+   
+      <button type="submit"> Submit </button>
+   </form>
+   
+   <div class="output">
+      <ul id="list">
+         
+      </ul>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
