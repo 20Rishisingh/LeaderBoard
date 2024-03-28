@@ -11,6 +11,11 @@ body{
    width: 100%;
 }
 
+@keyframes go-left-right {        
+   from { left: -400px; }             
+   to { left: calc(100% - 75%); } 
+ }
+
 h1{
    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-size: 60px;
@@ -21,6 +26,9 @@ h1{
    text-decoration: underline rgb(248, 40, 40);
    margin: 15px;
    padding: 10px;
+
+   animation: go-left-right 3s infinite alternate;
+   position: relative;
 }
 
 form{
