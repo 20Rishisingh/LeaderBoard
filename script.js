@@ -20,7 +20,7 @@ function Submit (event){
    PlayersList.push(playerData);
    PlayersList.sort((player1, player2) => parseInt(player2.score) - parseInt(player1.score));
 
-   playerList.innerHTML = ''
+   playerList.innerHTML = '';
 
    for(let index = 0; index < PlayersList.length; index++){
       const player = PlayersList[index];
@@ -31,7 +31,7 @@ function Submit (event){
 
       const incScore = document.createElement('button')
       const decScore = document.createElement('button')
-      const deleteButton = document.createElement('button');
+      const deleteBtn = document.createElement('button');
 
 
       incScore.innerText = '+5'
@@ -40,14 +40,14 @@ function Submit (event){
       decScore.innerText = '-5'
       decScore.setAttribute('onclick', `decScoreHandler(${index})`)
 
-      deleteButton.innerText = 'Delete';
-      deleteButton.setAttribute('onclick', `deletePlayer(${index})`);
+      deleteBtn.innerText = 'Delete';
+      deleteBtn.setAttribute('onclick', `deletePlayer(${index})`);
 
       curentScore.innerText = player.score
       countryContent.innerText = player.country
       nameContent.innerText = player.name
 
-      liEl.append(nameContent, curentScore, countryContent,  incScore, decScore)
+      liEl.append(nameContent, curentScore, countryContent,  incScore, deleteBtn, decScore)
       playerList.append(liEl)         
    }
 }   
@@ -68,7 +68,7 @@ function refreshList (){
 
       const incScore = document.createElement('button')
       const decScore = document.createElement('button')
-      const deleteButton = document.createElement('button');
+      const deleteBtn = document.createElement('button');
 
       incScore.innerText = '+5'
       incScore.setAttribute('onclick', `incScoreHandler(${index})`)
@@ -76,14 +76,14 @@ function refreshList (){
       decScore.innerText = '-5'
       decScore.setAttribute('onclick', `decScoreHandler(${index})`)
 
-      deleteButton.innerText = 'Delete';
-      deleteButton.setAttribute('onclick', `deletePlayer(${index})`)
+      deleteBtn.innerText = 'Delete';
+      deleteBtn.setAttribute('onclick', `deletePlayer(${index})`)
 
       curentScore.innerText = player.score
       countryContent.innerText = player.country
       nameContent.innerText = player.name
 
-      liEl.append(nameContent, curentScore, countryContent, incScore, decScore)
+      liEl.append(nameContent, curentScore, countryContent, incScore, deleteBtn, decScore)
       playerList.append(liEl)         
    }
 }
