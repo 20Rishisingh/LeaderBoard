@@ -112,6 +112,7 @@ button{
 #list li{
    color: blanchedalmond;
    padding: 10px;
+   border-bottom: 2px solid blue;
 }
 
 #list li span{
