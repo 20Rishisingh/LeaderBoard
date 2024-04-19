@@ -9,6 +9,7 @@ body{
    color: blue;
    height: 100%;
    width: 100%;
+   overflow-x: hidden;
 }
 
 @keyframes go-left-right {        
@@ -17,18 +18,19 @@ body{
  }
 
 h1{
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-family: cursive;
    font-size: 60px;
-   font-weight: bold;
+   /* font-weight: bold; */
    display: flex;
    justify-content: center;
    align-items: center;
-   text-decoration: underline rgb(248, 40, 40);
+   text-decoration: 4px underline brown;
    margin: 15px;
    padding: 10px;
 
    animation: go-left-right 3s infinite alternate;
    position: relative;
+
 }
 
 form{
@@ -83,7 +85,7 @@ button{
    margin-left: 25px;
    padding: 15px;
    font-stretch: ultra-expanded;
-   border: 2px solid red;
+   border: 4px solid blue;
    border-radius: 50px;
    box-shadow: 0 3px 5px 2px black;
    cursor: pointer;    
@@ -92,10 +94,13 @@ button{
 .output{
    height: 50em;
    width: 80em;
-   border: 2px solid red;
    text-align: center;
-   margin: 30px 100px;
+   margin: 50px auto ;
    padding: 15px;
+   
+   background-color: brown;
+   border-radius: 15px;
+   border: 4px solid blue;
 }
 
 #list{
@@ -105,7 +110,7 @@ button{
 }
 
 #list li{
-   color: blue;
+   color: blanchedalmond;
    padding: 10px;
 }
 
